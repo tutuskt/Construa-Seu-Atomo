@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mass"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:text="A"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"/>
+
+                <TextView
+                    android:id="@+id/atomic"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="wrap_content"
+                    android:text="Z"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/symbol"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="X"
+                android:textSize="70sp"
+                android:fontFamily="serif"/>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/charge"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:text="c"
+                    android:textSize="20sp"
+                    android:fontFamily="serif"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/element"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:text="ELEMENTO"
+            android:textSize="20sp"
+            android:fontFamily="serif"/>
+
+    </LinearLayout>
+
+</LinearLayout>

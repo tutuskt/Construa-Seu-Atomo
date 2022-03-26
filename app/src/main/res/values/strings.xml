@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Construa seu Átomo!</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="n">n</string>
+    <string name="p">p+</string>
+    <string name="e">e-</string>
+
+    <string name="text1">1- INTRODUÇÃO:\n
+Este tutorial tem por objetivo explicar o funcionamento do aplicativo “Construa Seu Átomo” que é um software que trata sobre o conceito de estrutura atômica segundo o modelo atômico de Borh, que é um tema tratado dentro do currículo de Química.\n\n
+
+O público alvo são alunos com necessidades especiais, especificamente discentes surdos, da disciplina de Química da rede pública de ensino básico ou superior. Contudo, o software poderá ser utilizado por alunos sem necessidades, tendo como referência a Lei 13.146, de 06 de julho de 2015, em especial o seu Art.28.\n\n
+
+Por meio do aplicativo, os alunos poderão representar a estrutura eletrônica de um átomo, segundo o modelo atômico de Bohr, adicionando ou removendo prótons, nêutrons e elétrons. A representação permite aos alunos conferir o número de prótons, nêutrons e elétrons, o símbolo e o nome do elemento químico, o número de massa, o número atômico, a carga e, por fim, a distribuição eletrônica.\n
+\n2- MATERIAL NECESSÁRIO PARA UTILIZAÇÃO DO APLICATIVO:\n\n
+• Dispositivo móvel (tablet), de 7 polegadas ou mais, com sistema operacional Android®.\n
+• Aplicativo “Contrua Seu Átomo” .\n\n
+3- RESUMO DO FUNCIONAMENTO:\n\n
+• É fundamental que o aplicativo esteja instalado corretamente no dispositivo móvel (tablet).\n
+• Ao executar o “Construa seu átomo”, o usuário visualizará a tela de apresentação do aplicativo e os botões \'Tutorial\' e \'Começar\' (Figura 1).
+    </string>
+
+    <string name="figura1">\nFigura 1: Tela de apresentação do aplicativo.\n\n</string>
+    <string name="text2">• Ao clicar em “Começar”, o aluno visualizará a tela de início do aplicativo (Figura 2).\n</string>
+    <string name="figura2">\nFigura 2: Tela de inicial do aplicativo.\n\n</string>
+    <string name="text3">• Legenda:\n\n
+1)	p+ : próton – botão utilizado para alterar a quantidade de prótons (adicionar ou remover) no átomo a ser representado.\n\n
+2)	n : nêutron – botão utilizado para alterar a quantidade de nêutrons (adicionar ou remover) no átomo a ser representado.\n\n
+3)	e- : elétron – botão utilizado para alterar a quantidade de elétrons (adicionar ou remover) no átomo a ser representado.\n\n
+4)	Adicionar – botão utilizado para ativar a ação “adicionar” no átomo a ser representado.\n\n
+5)	Remover – botão utilizado para ativar a ação “remover” no átomo a ser representado.\n\n
+6)	X – local onde será apresentado o símbolo do elemento químico referente ao átomo representado.\n\n
+7)	Elemento – local onde será apresentado o nome do elemento químico referente ao átomo representado.\n\n
+8)	A – local onde será apresentado o número de massa do átomo representado.\n\n
+9)	Z – local onde será apresentado o número atômico do átomo representado.\n\n
+10)	C – local onde será apresentado o carga do átomo representado.\n\n
+11)	Limpar – botão utilizado para limpar todas as informações da tela.\n\n
+12)	Fechar – botão utilizado para fechar o aplicativo.\n\n
+Obs.: a distribuição eletrônica aparecerá automaticamente no canto inferior direito da tela, a partir do momento que o usuário adicionar o primeiro elétron.\n\n
+• Selecione uma das opções “Adicionar” ou “Remover”. Ao clicar em uma das alternativas, o fundo do botão selecionado ficará na cor verde indicando que ele está ativo (Figura 3).\n\n
+    </string>
+    <string name="figura3">Figura 3: Botões "Adicionar" e "Remover" selecionados.\n\n</string>
+    <string name="text4">• Em seguida, selecione uma das partículas que deseja adicionar ou remover, sendo elas “Prótons”, “Nêutrons” e “Elétrons”. Ao clicar em uma das partículas, o fundo do botão mudará de cor, indicando que ele está ativo. O botão do próton “p+” ficará vermelho  (Figura 4), o botão do nêutron “n” ficará verde (Figura 5) e o botão do elétron “e-” ficará azul (Figura 6)\n\n</string>
+    <string name="figura4">Figura 4: Botão próton (p+) selecionado.\n\n</string>
+    <string name="figura5">Figura 5: Botão nêutron (n) selecionado.\n\n</string>
+    <string name="figura6">Figura 6: Botão elétron (e-) selecionado.\n\n</string>
+    <string name="text5">• Por fim, ao manusear as partículas, clique no local adequado para adicioná-las ou removê-las – prótons e nêutrons na região que representa o núcleo atômico e elétrons na região que representa a eletrosfera do átomo.\n\n
+                        4- DEMONSTRAÇÃO DE UM ÁTOMO REPRESENTADO:\n\n</string>
+    <string name="figura7">Figura 7: Representação do átomo de sódio.</string>
+    <string name="text6">\n\n• Observar-se na Figura 7 a representação de um átomo de sódio. Na tela é possível observar todas as informações disponibilizadas pelo aplicativo, segundo a representação do modelo atômico Bohr. São elas: o número de prótons, nêutrons e elétrons inseridos, o nome e símbolo do elemento químico, a carga do elemento em questão, a distribuição eletrônica  de acordo com Linus Pauling e a mensagem se o átomo representado é um isótopo ou não.\n\n </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

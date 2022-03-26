@@ -1,0 +1,344 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainFrame"
+    android:layout_margin="20dp"
+    tools:context="br.com.danieljunior.bohrapp.BorhFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_proton"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@color/btnDefault"
+                android:text="@string/p" />
+
+            <Button
+                android:id="@+id/btn_neutron"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@color/btnDefault"
+                android:text="@string/n" />
+
+            <Button
+                android:id="@+id/btn_eletron"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/btnDefault"
+                android:text="@string/e" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_remove_layout"
+            android:layout_below="@id/buttons_layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/add"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorAccent"
+                android:text="Adicionar"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/remove"
+                android:textAllCaps="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:background="@color/btnDefault"
+                android:text="Remover"
+                android:textColor="@color/red"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/chemist_greeting"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:visibility="invisible"
+            android:text="Uau! Você achou um isótopo!"/>
+
+        <TableLayout
+            android:id="@+id/element_table_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:stretchColumns="2">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="@drawable/border"
+                    android:gravity="left"
+                    android:padding="6dp"
+                    android:text="Prótons"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+
+                <TextView
+                    android:id="@+id/protons"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="@drawable/border"
+                    android:gravity="left"
+                    android:padding="6dp"
+                    android:text="Nêutrons"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+                <TextView
+                    android:id="@+id/neutrons"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:text="0"
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:background="@drawable/border"
+                    android:gravity="left"
+                    android:padding="6dp"
+                    android:text="Elétrons"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+                <TextView
+                    android:id="@+id/eletrons"
+                    android:background="@drawable/border"
+                    android:gravity="center"
+                    android:padding="6dp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"/>
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:id="@+id/element_layout"
+            android:layout_above="@id/element_table_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="serif"
+                            android:text="A"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/atomic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:fontFamily="serif"
+                            android:text="Z"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/symbol"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="X"
+                        android:textSize="70sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/charge"
+                            android:textAllCaps="false"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:fontFamily="serif"
+                            android:text="c"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/element"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="serif"
+                    android:text="ELEMENTO"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eletronic_distribution_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distribuição Eletrônica:"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/eletronic_distribution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text=""
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/atom_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/eletrosphere"
+                android:layout_width="600dp"
+                android:layout_height="600dp"
+                android:translationY="-40dp"
+                app:srcCompat="@mipmap/e0" />
+
+            <ImageView
+                android:id="@+id/core"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:translationY="-430dp"
+                android:translationX="210dp"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/ic_exit_to_app_black_24dp"
+            android:text="Fechar"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/close"
+            android:layout_alignParentBottom="true"
+            android:text="Limpar"/>
+
+        <ToggleButton
+            android:id="@+id/Btntabela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/close"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="50dp"
+            android:text="Tabela Periódica"
+            android:textOn="Tabela Ativada"
+            android:textOff="Tabela Desativada"/>
+        <!--android:layout_toLeftOf="@id/clear"-->
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/jj_conteudo"
+        android:layout_width="900dp"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imageView0"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="-20dp"
+            app:srcCompat="@mipmap/tabela2"/>
+
+
+    </FrameLayout>
+</FrameLayout>
