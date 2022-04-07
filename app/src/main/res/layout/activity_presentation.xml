@@ -13,14 +13,16 @@
 
     <Button
         android:id="@+id/start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Começar!"
+        android:text="Começar"
+        android:textColor="#FFFBF5"
+        android:textSize="20sp"
+        android:layout_width="118dp"
+        android:layout_height="46dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="20dp"
-        android:drawableRight="@drawable/ic_done_black_24dp"/>
-
+        android:background="@drawable/green_btn"
+        />
     <Button
         android:id="@+id/tutoriais"
         android:layout_width="wrap_content"
