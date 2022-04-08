@@ -2,8 +2,8 @@ package br.com.danieljunior.bohrapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -11,17 +11,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 import java.io.IOException;
-import java.util.List;
 
 import br.com.danieljunior.bohrapp.database.ElementDAO;
-import br.com.danieljunior.bohrapp.models.Element;
-import br.com.danieljunior.bohrapp.util.DialogFactory;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class BohrActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -110,14 +105,12 @@ public class BohrActivity extends AppCompatActivity
             startActivity(that);
             //navigationView.getMenu().getItem(0).setChecked(true);
         }
-        //else if (id==R.id.nav_video){
-        //  Intent j = new Intent(this, BohrActivity.class);
-        //j.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        //startActivity(j);
-        // }
         if (id == R.id.nav_video) {
-            DialogFactory.showInfoMessage("Informação", "Funcionalidade em desenvolvimento...", this);
-            navigationView.getMenu().getItem(0).setChecked(true);
+            //DialogFactory.showInfoMessage("Informação", "Funcionalidade em desenvolvimento...", this);
+            //navigationView.getMenu().getItem(0).setChecked(true);
+            Intent j = new Intent(this, VideoActivity.class);
+            j.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(j);
         }
          else if (id == R.id.nav_bohr) {
             fragmentManager.beginTransaction().replace(R.id.mainFrame, new BorhFragment()).commit();
