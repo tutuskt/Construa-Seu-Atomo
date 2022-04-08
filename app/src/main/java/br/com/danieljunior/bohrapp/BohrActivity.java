@@ -11,9 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import java.io.IOException;
-
 import br.com.danieljunior.bohrapp.database.ElementDAO;
 import butterknife.BindView;
 import butterknife.ButterKnife;

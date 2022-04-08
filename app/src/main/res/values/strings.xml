@@ -10,9 +10,9 @@
     <string name="e">e-</string>
 
     <string name="text1">1- INTRODUÇÃO:\n
-Este tutorial tem por objetivo explicar o funcionamento do aplicativo “Construa Seu Átomo” que é um software que trata sobre o conceito de estrutura atômica segundo o modelo atômico de Borh, que é um tema tratado dentro do currículo de Química.\n\n
+Este tutorial tem por objetivo explicar o funcionamento do aplicativo “Construa Seu Átomo” que é um software que trata sobre o conceito de estrutura atômica segundo o modelo atômico de Borh, que é um tema tratado dentro do currículo de Química. \n\n
 
-O público alvo são alunos com necessidades especiais, especificamente discentes surdos, da disciplina de Química da rede pública de ensino básico ou superior. Contudo, o software poderá ser utilizado por alunos sem necessidades, tendo como referência a Lei 13.146, de 06 de julho de 2015, em especial o seu Art.28.\n\n
+Tendo como referência a Lei 13.146, de 06 de julho de 2015, em especial o seu Art.28. O público alvo geral são os alunos de turmas inclusivas dando uma atenção mais específica para os estudantes com deficiência auditiva da disciplina de Química da rede pública de ensino básico ou superior. Apesar da referência mencionada, nada impede do software ser utilizado por discentes sem necessidades especiais.\n\n
 
 Por meio do aplicativo, os alunos poderão representar a estrutura eletrônica de um átomo, segundo o modelo atômico de Bohr, adicionando ou removendo prótons, nêutrons e elétrons. A representação permite aos alunos conferir o número de prótons, nêutrons e elétrons, o símbolo e o nome do elemento químico, o número de massa, o número atômico, a carga e, por fim, a distribuição eletrônica.\n
 \n2- MATERIAL NECESSÁRIO PARA UTILIZAÇÃO DO APLICATIVO:\n\n
@@ -20,7 +20,7 @@ Por meio do aplicativo, os alunos poderão representar a estrutura eletrônica d
 • Aplicativo “Contrua Seu Átomo” .\n\n
 3- RESUMO DO FUNCIONAMENTO:\n\n
 • É fundamental que o aplicativo esteja instalado corretamente no dispositivo móvel (tablet).\n
-• Ao executar o “Construa seu átomo”, o usuário visualizará a tela de apresentação do aplicativo e os botões \'Tutorial\' e \'Começar\' (Figura 1).
+• Ao executar o “Construa seu átomo”, o usuário visualizará a tela de apresentação do aplicativo e os botões \'Tutorial' e 'Começar' (Figura 1).
     </string>
 
     <string name="figura1">\nFigura 1: Tela de apresentação do aplicativo.\n\n</string>

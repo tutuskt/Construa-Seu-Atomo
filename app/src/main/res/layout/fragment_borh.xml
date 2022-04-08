@@ -314,30 +314,30 @@
             android:id="@+id/Btntabela"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/close"
             android:layout_alignParentRight="true"
-            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
             android:text="Tabela Periódica"
             android:textOn="Tabela Ativada"
             android:textOff="Tabela Desativada"/>
-        <!--android:layout_toLeftOf="@id/clear"-->
 
 
     </RelativeLayout>
 
     <FrameLayout
         android:id="@+id/jj_conteudo"
-        android:layout_width="900dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:visibility="invisible">
 
         <ImageView
             android:id="@+id/imageView0"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="400dp"
-            android:layout_marginTop="-1dp"
-            android:layout_marginLeft="-20dp"
-            app:srcCompat="@mipmap/tabela2"/>
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-100dp"
+            app:srcCompat="@mipmap/tabela2"
+            android:clickable="true"/>
 
 
     </FrameLayout>

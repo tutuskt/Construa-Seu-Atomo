@@ -168,11 +168,9 @@ public class BorhFragment extends Fragment implements View.OnTouchListener, Bohr
     public void HideBtnClick(View v){
         if(JJ_conteudo.getVisibility() == View.INVISIBLE ){
             JJ_conteudo.setVisibility(View.VISIBLE);
-            JJ_conteudo.setClickable(true);
         }
         else{
             JJ_conteudo.setVisibility(View.INVISIBLE);
-            JJ_conteudo.setClickable(false);
         }
     }
 

@@ -20,18 +20,40 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
             <Button
                 android:id="@+id/tutorial_video"
-                android:text="Tutorial em vídeo"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp"
-                android:layout_width="170dp"
-                android:layout_height="40dp"
+
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonshape_vermelho"
+
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/red_btn"
+
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
+                android:text="Tutorial em Vídeo"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imdedo"
+                android:layout_width="112dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-50dp"
+                android:layout_marginRight="195dp"
                 />
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
@@ -258,17 +280,47 @@
 
             <Button
                 android:id="@+id/start_tutorial"
+
+                android:layout_width="110dp"
+                android:layout_height="60dp"
+                android:background="@drawable/buttonshape_verde"
+
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+
+                android:shadowColor="#A8A8A8"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="5"
                 android:text="Começar"
-                android:textColor="#FFFBF5"
-                android:textSize="20sp"
-                android:layout_width="118dp"
-                android:layout_height="46dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+
+
+<!--
+            <Button
+                android:id="@+id/start_tutorial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="30dp"
-                android:background="@drawable/green_btn"
-                />
+                android:drawableRight="@drawable/ic_done_black_24dp"
+                android:text="Começar!" />
+            -->
+<!--
+            <Button
+                android:id="@+id/tutorial_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:drawableRight="@drawable/ic_play_circle_outline_black_24dp"
+                android:text="Tutorial em Vídeo" />
 
+-->
 
         </LinearLayout>
     </ScrollView>

@@ -13,7 +13,7 @@ public class VideoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tutorial_video_layout);
-        VideoView videoView = findViewById(R.id.videoView);
+        VideoView videoView = (VideoView) findViewById(R.id.videoView);
         videoView.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.tutorial_libras);
         MediaController mediaController = new MediaController(this);
         //link mediaController to videoView
