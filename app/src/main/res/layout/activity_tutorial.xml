@@ -12,8 +12,10 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -25,32 +27,31 @@
                 android:layout_height="100dp"
                 android:orientation="vertical">
 
-            <Button
-                android:id="@+id/tutorial_video"
+                <Button
+                    android:id="@+id/tutorial_video"
 
-                android:layout_width="200dp"
-                android:layout_height="60dp"
-                android:background="@drawable/buttonshape_vermelho"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
 
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonshape_vermelho"
 
-                android:shadowColor="#A8A8A8"
-                android:shadowDx="0"
-                android:shadowDy="0"
-                android:shadowRadius="5"
-                android:text="Tutorial em Vídeo"
-                android:textColor="#FFFFFF"
-                android:textSize="20dp" />
+                    android:shadowColor="#A8A8A8"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="5"
+                    android:text="Tutorial em Vídeo"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp" />
 
-            <ImageView
-                android:id="@+id/imdedo"
-                android:layout_width="112dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="-50dp"
-                android:layout_marginRight="195dp"
-                />
+                <ImageView
+                    android:id="@+id/imdedo"
+                    android:layout_width="112dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginRight="195dp" />
 
             </LinearLayout>
 
@@ -59,11 +60,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:text="@string/text1"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView"
@@ -79,20 +80,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:textSize="18sp"
                 android:text="@string/figura1"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
-                android:textSize="18sp"
+                android:layout_marginRight="16dp"
                 android:text="@string/text2"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -109,137 +110,118 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/figura2"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
                 android:text="@string/text3"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
-                <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="457dp"
-                    android:layout_height="359dp"
-                    android:layout_gravity="left"
-                    android:layout_marginTop="36dp"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginRight="36dp"
-                    android:foreground="@drawable/full_border"
-                    app:srcCompat="@mipmap/figura3" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="457dp"
-                    android:layout_height="359dp"
-                    android:layout_gravity="right"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="36dp"
-                    android:foreground="@drawable/full_border"
-                    app:srcCompat="@mipmap/figura3_1" />
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="36dp"
+                android:foreground="@drawable/full_border"
+                app:srcCompat="@mipmap/figura3" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="36dp"
-                android:layout_marginRight="16dp"
+                android:gravity="center"
                 android:text="@string/figura3"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="36dp"
+                android:foreground="@drawable/full_border"
+                app:srcCompat="@mipmap/figura4" />
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:text="@string/text4"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="457dp"
-                    android:layout_height="359dp"
-                    android:layout_gravity="left"
-                    android:layout_marginTop="36dp"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginRight="36dp"
-                    android:foreground="@drawable/full_border"
-                    app:srcCompat="@mipmap/figura4" />
-
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="457dp"
-                    android:layout_height="359dp"
-                    android:layout_gravity="right"
-                    android:layout_marginRight="16dp"
-                    android:layout_marginTop="36dp"
-                    android:foreground="@drawable/full_border"
-                    app:srcCompat="@mipmap/figura5" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/textView8"
-                    android:layout_width="481dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginRight="16dp"
-                    android:text="@string/figura4"
-                    android:textSize="18sp"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/textView9"
-                        android:layout_width="481dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="16dp"
-                        android:text="@string/figura5"
-                        android:textSize="18sp"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
-
-                </LinearLayout>
-            </LinearLayout>
+                android:gravity="center"
+                android:text="@string/figura4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="455dp"
-                android:layout_height="347dp"
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="36dp"
                 android:foreground="@drawable/full_border"
-                app:srcCompat="@mipmap/figura6" />
+                app:srcCompat="@mipmap/figura5" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:text="@string/figura5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/text4"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView6_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginRight="36dp"
+                    android:foreground="@drawable/full_border"
+                    app:srcCompat="@mipmap/figura6_1" />
+
+                <ImageView
+                    android:id="@+id/imageView6_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginRight="16dp"
+                    android:foreground="@drawable/full_border"
+                    app:srcCompat="@mipmap/figura6_2" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="@string/figura6"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -248,46 +230,131 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:text="@string/text5"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginRight="36dp"
+                    android:foreground="@drawable/full_border"
+                    app:srcCompat="@mipmap/figura7" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginRight="16dp"
+                    android:foreground="@drawable/full_border"
+                    app:srcCompat="@mipmap/figura8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/figura7"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="290dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/figura8"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </LinearLayout>
 
             <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="600dp"
-                android:layout_height="500dp"
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:foreground="@drawable/full_border"
-                app:srcCompat="@mipmap/figura7" />
+                app:srcCompat="@mipmap/figura9" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="@string/figura7"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:text="@string/figura9"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/textView15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:text="@string/text6"
-                android:textSize="18sp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/text7"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:foreground="@drawable/full_border"
+                app:srcCompat="@mipmap/figura10" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/figura10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/start_tutorial"
 
                 android:layout_width="110dp"
                 android:layout_height="60dp"
-                android:background="@drawable/buttonshape_verde"
-
-                android:layout_marginBottom="30dp"
                 android:layout_gravity="center"
+
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/buttonshape_verde"
 
                 android:shadowColor="#A8A8A8"
                 android:shadowDx="0"
@@ -296,31 +363,6 @@
                 android:text="Começar"
                 android:textColor="#FFFFFF"
                 android:textSize="20dp" />
-
-
-<!--
-            <Button
-                android:id="@+id/start_tutorial"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"
-                android:drawableRight="@drawable/ic_done_black_24dp"
-                android:text="Começar!" />
-            -->
-<!--
-            <Button
-                android:id="@+id/tutorial_video"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="30dp"
-                android:drawableRight="@drawable/ic_play_circle_outline_black_24dp"
-                android:text="Tutorial em Vídeo" />
-
--->
 
         </LinearLayout>
     </ScrollView>
